@@ -33,6 +33,7 @@
     "model-context-protocol"
   ],
   "license": "MIT",
+  "mcpName": "io.github.fr1sk/tmux-mcp",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.29.0",
     "zod": "^3.24.0"
