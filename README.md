@@ -166,13 +166,13 @@ Use `list_sessions` → `list_windows` → `list_panes` to discover the right ta
 ## Install
 
 ```bash
-npx tmux-mcp-server
+npx @fr1sk/tmux-mcp
 ```
 
 Or globally:
 
 ```bash
-npm install -g tmux-mcp-server
+npm install -g @fr1sk/tmux-mcp
 ```
 
 ## Configure
@@ -184,7 +184,7 @@ npm install -g tmux-mcp-server
   "mcp": {
     "tmux": {
       "type": "local",
-      "command": ["npx", "-y", "tmux-mcp-server"]
+      "command": ["npx", "-y", "@fr1sk/tmux-mcp"]
     }
   }
 }
@@ -197,7 +197,7 @@ npm install -g tmux-mcp-server
   "mcpServers": {
     "tmux": {
       "command": "npx",
-      "args": ["-y", "tmux-mcp-server"]
+      "args": ["-y", "@fr1sk/tmux-mcp"]
     }
   }
 }
@@ -210,7 +210,7 @@ npm install -g tmux-mcp-server
   "mcpServers": {
     "tmux": {
       "command": "npx",
-      "args": ["-y", "tmux-mcp-server"]
+      "args": ["-y", "@fr1sk/tmux-mcp"]
     }
   }
 }
@@ -267,7 +267,7 @@ Example (OpenCode):
   "mcp": {
     "tmux": {
       "type": "local",
-      "command": ["npx", "-y", "tmux-mcp-server"],
+      "command": ["npx", "-y", "@fr1sk/tmux-mcp"],
       "environment": {
         "TMUX_MCP_ALWAYS_USE": "true",
         "TMUX_MCP_DEFAULT_SESSION": "dev"

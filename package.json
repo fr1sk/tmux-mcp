@@ -1,5 +1,5 @@
 {
-  "name": "tmux-mcp-server",
+  "name": "@fr1sk/tmux-mcp",
   "version": "0.3.0",
   "description": "MCP server for tmux — list sessions/windows/panes, capture output, send keys",
   "author": "fr1sk",
@@ -14,7 +14,7 @@
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "tmux-mcp-server": "dist/index.js"
+    "tmux-mcp": "dist/index.js"
   },
   "files": [
     "dist",
