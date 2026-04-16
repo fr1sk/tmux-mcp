@@ -2,13 +2,14 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.fr1sk/tmux-mcp",
   "title": "tmux-mcp",
-  "description": "MCP server that gives AI assistants full visibility into your tmux sessions — browse sessions, windows, and panes, read terminal output, and send commands.",
-  "version": "0.3.1",
+  "description": "MCP server for tmux — browse sessions, capture output, send commands.",
+  "version": "0.3.2",
   "packages": [
     {
       "registryType": "npm",
       "name": "@fr1sk/tmux-mcp",
-"version": "0.3.2",
+      "version": "0.3.2",
+      "identifier": "tmux-mcp",
       "runtimeArguments": []
     }
   ],
