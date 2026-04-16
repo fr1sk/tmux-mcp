@@ -1,14 +1,24 @@
 {
   "name": "tmux-mcp",
-  "version": "0.1.0",
+  "version": "0.3.0",
   "description": "MCP server for tmux — list sessions/windows/panes, capture output, send keys",
+  "author": "fr1sk",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fr1sk/tmux-mcp.git"
+  },
+  "homepage": "https://github.com/fr1sk/tmux-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/fr1sk/tmux-mcp/issues"
+  },
   "type": "module",
   "main": "dist/index.js",
   "bin": {
     "tmux-mcp": "dist/index.js"
   },
   "files": [
-    "dist"
+    "dist",
+    "assets"
   ],
   "scripts": {
     "build": "tsc",
