@@ -9,7 +9,7 @@
       "registryType": "npm",
       "name": "@fr1sk/tmux-mcp",
       "version": "0.3.2",
-      "identifier": "tmux-mcp",
+      "identifier": "@fr1sk/tmux-mcp",
       "runtimeArguments": [],
       "transport": {
         "type": "stdio"
