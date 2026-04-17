@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.3.3
+
+- docs: highlight always-use-tmux agent observability feature in README
+- docs: add server.json and mcpName for official MCP registry
+- fix: remove self-dependency from package.json
+- docs: recommend global install over npx
+
 ## 0.3.0
 
 - Added `new_window`, `split_pane`, `kill_session`, `kill_window`, `kill_pane`, `rename_session`, `rename_window`, `get_config` tools

@@ -3,12 +3,12 @@
   "name": "io.github.fr1sk/tmux-mcp",
   "title": "tmux-mcp",
   "description": "MCP server for tmux — browse sessions, capture output, send commands.",
-  "version": "0.3.2",
+      "version": "0.3.3",
   "packages": [
     {
       "registryType": "npm",
       "name": "@fr1sk/tmux-mcp",
-      "version": "0.3.2",
+"version": "0.3.3",
       "identifier": "@fr1sk/tmux-mcp",
       "runtimeArguments": [],
       "transport": {
