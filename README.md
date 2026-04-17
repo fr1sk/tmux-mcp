@@ -6,6 +6,8 @@
 
 MCP server that gives AI assistants full visibility into your tmux sessions — browse sessions, windows, and panes, read terminal output, and send commands.
 
+**Watch your AI agent work in real-time.** Enable `TMUX_MCP_ALWAYS_USE` to force every shell command through a named tmux session instead of direct Bash — every command your AI runs appears live in your terminal, fully auditable.
+
 Works with **Claude Code, OpenCode, Cursor, Windsurf**, and any MCP-compatible host.
 
 ## What it can do
