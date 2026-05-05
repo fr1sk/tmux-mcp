@@ -4,6 +4,10 @@ import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js"
 import { z } from "zod";
 import { execFile } from "child_process";
 import { promisify } from "util";
+import { createRequire } from "module";
+
+const require = createRequire(import.meta.url);
+const { version } = require("../package.json") as { version: string };
 
 const execFileAsync = promisify(execFile);
 
@@ -59,7 +63,7 @@ async function run(fn: () => Promise<string>) {
 }
 
 const server = new McpServer(
-  { name: "tmux-mcp", version: "0.3.0" },
+  { name: "tmux-mcp", version },
   ALWAYS_USE_TMUX
     ? {
         instructions: [
