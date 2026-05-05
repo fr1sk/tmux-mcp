@@ -58,7 +58,21 @@ async function run(fn: () => Promise<string>) {
   }
 }
 
-const server = new McpServer({ name: "tmux-mcp", version: "0.3.0" });
+const server = new McpServer(
+  { name: "tmux-mcp", version: "0.3.0" },
+  ALWAYS_USE_TMUX
+    ? {
+        instructions: [
+          "CRITICAL: Route ALL shell commands through tmux instead of direct Bash.",
+          DEFAULT_SESSION
+            ? `Use the send_keys tool to execute commands in session '${DEFAULT_SESSION}'. Create the session first with new_session if it doesn't exist.`
+            : "Use the send_keys tool to execute commands in a tmux session. No default session configured — ask the user which session to use, or create one with new_session.",
+          "Never use the Bash/shell tool for command execution — always use tmux send_keys.",
+          "Call get_config at the start of each task to confirm the tmux routing configuration.",
+        ].join(" "),
+      }
+    : undefined,
+);
 
 server.tool(
   "list_sessions",
